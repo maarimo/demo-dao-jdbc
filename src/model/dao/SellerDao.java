@@ -11,6 +11,6 @@ public interface SellerDao {
     void update(Seller obj);
     void deleteById(Integer id);
     Seller findById(Integer id) throws DAOExceptions;
-    List<Seller> findAll();
+    List<Seller> findAll() throws DAOExceptions;
     List<Seller> findByDepartment(Department department) throws DAOExceptions;
 }
